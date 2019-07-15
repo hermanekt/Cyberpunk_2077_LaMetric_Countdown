@@ -36,6 +36,10 @@ async function days(timezone, ip) {
     delta = differenceInDays(parse(`2020-07-14T00:00:00`), now);
   }
 
+   if (delta =< 0) {
+    delta = '';
+  }
+  
   return delta;
 }
 
