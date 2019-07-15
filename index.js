@@ -50,7 +50,7 @@ const handler = async (req, res) => {
   }
 
   const current = await days(timezone, ip);
-  const icon = current === 0 ? '29885' : '29885';
+  const icon = current === 0 ? 'a29985' : '29885';
 
   const startOptions = { 11: 25, 10: 55 };
   const m = new Date().getMonth();
