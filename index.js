@@ -50,7 +50,7 @@ const handler = async (req, res) => {
   }
 
   const current = await days(timezone, ip);
-  const icon = current === 276 ? 'a29985' : '29885';
+  const icon = current === 0 ? 'a29985' : '29885';
 
   const startOptions = { 11: 25, 10: 55 };
   const m = new Date().getMonth();
@@ -58,7 +58,7 @@ const handler = async (req, res) => {
   const start = startOptions[m] || 312;
 
   /* const unit = current === 1 ? ' day' : ' days'; */
-  const unit = 'D';
+  const unit = current === 0 ? ' Released' : ' D';
         
   send(res, 200, {
     frames: [
@@ -72,7 +72,6 @@ const handler = async (req, res) => {
         icon,
       },
     ],
-    cycles: 0
   });
 };
 
