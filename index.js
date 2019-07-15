@@ -81,11 +81,7 @@ if ( current == '0')
   send(res, 200, {
     frames: [
       {
-        goalData: {
-          start,
-          current,
-          end: 1,
-          unit,
+        "text":"RELEASED"
         },
         icon,
       },
