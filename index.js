@@ -8,11 +8,9 @@ const { days, getTZ } = require('./days');
 const LRU = require('lru-cache');
 const cache = new LRU({ max: 10000 });
 
-var server_port = process.env.YOUR_PORT || process.env.PORT || 80;
-var server_host = process.env.YOUR_HOST || '0.0.0.0';
-server.listen(server_port, server_host, function() {
-    console.log('Listening on port %d', server_port);
-});
+# use alternate localhost and the port Heroku assigns to $PORT
+const host = '0.0.0.0';
+const port = process.env.PORT || 3000;
 
 
 function status(res) {
