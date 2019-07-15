@@ -57,8 +57,9 @@ const handler = async (req, res) => {
 
   const start = startOptions[m] || 312;
 
-  const unit = current === 1 ? ' day' : ' days';
-
+  /* const unit = current === 1 ? ' day' : ' days'; */
+  const unit = 'D';
+        
   send(res, 200, {
     frames: [
       {
