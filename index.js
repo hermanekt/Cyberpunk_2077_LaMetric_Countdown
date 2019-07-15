@@ -8,6 +8,8 @@ const { days, getTZ } = require('./days');
 const LRU = require('lru-cache');
 const cache = new LRU({ max: 10000 });
 
+const PORT = process.env.PORT || 4000;
+
 function status(res) {
   const json = {};
   cache.forEach((value, key) => {
