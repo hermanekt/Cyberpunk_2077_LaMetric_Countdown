@@ -33,7 +33,7 @@ async function days(timezone, ip) {
   let delta = differenceInDays(xmas, now);
 
   if (delta < 0) {
-    delta = differenceInDays(parse(`${year + 1}-04-16T00:00:00`), now);
+    delta = differenceInDays(parse(`2020-07-15T00:00:00`), now);
   }
 
   return delta;
