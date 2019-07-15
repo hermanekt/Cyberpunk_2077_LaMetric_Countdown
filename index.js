@@ -9,7 +9,10 @@ const LRU = require('lru-cache');
 const cache = new LRU({ max: 10000 });
 
 const host = '0.0.0.0';
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
 
 
 function status(res) {
