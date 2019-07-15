@@ -85,10 +85,6 @@ if ( current == '0')
         "text":"IT'S OUT"
         }
     ],
-    "sound": {
-    "category": "notifications",
-    "id": "cat"
-        }
   });
 };
 
