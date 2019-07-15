@@ -55,7 +55,7 @@ const handler = async (req, res) => {
   const startOptions = { 11: 25, 10: 55 };
   const m = new Date().getMonth();
 
-  const start = startOptions[m] || 310;
+  const start = startOptions[m] || 312;
 
   const unit = current === 1 ? ' day' : ' days';
 
@@ -71,6 +71,7 @@ const handler = async (req, res) => {
         icon,
       },
     ],
+    cycles: 0
   });
 };
 
