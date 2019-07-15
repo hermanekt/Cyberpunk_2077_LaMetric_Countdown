@@ -58,7 +58,7 @@ const handler = async (req, res) => {
   const start = startOptions[m] || 312;
 
   /* const unit = current === 1 ? ' day' : ' days'; */
-  const unit = current === 0 ? ' RELEASED' : ' D';
+  const unit = current === 0 ? 'D PLAY' : ' D';
         
   send(res, 200, {
     frames: [
