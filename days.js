@@ -37,7 +37,7 @@ async function days(timezone, ip) {
   }
   
   if (delta <= 0) {
-    delta = '';
+    delta = 'RELEASED';
   }
   
   return delta;
