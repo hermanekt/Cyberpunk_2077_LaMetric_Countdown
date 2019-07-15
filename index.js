@@ -66,7 +66,7 @@ const handler = async (req, res) => {
         goalData: {
           start,
           current,
-          end: 0,
+          end: 1,
           unit,
         },
         icon,
