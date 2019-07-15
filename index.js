@@ -27,16 +27,6 @@ const handler = async (req, res) => {
 
   if (req.url === '/status') return status(res);
 
-  let ip =
-    req.ip || req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-  if (ip === '::1' || ip === '::ffff:127.0.0.1') {
-    ip = '0.0.0.0';
-  }
-  
-  if (ip === '0.0.0.0' || process.env.TEST) {
-    ip = '8.8.8.8';
-  }
-
   if (ip.includes(',')) {
     [ip] = ip.split(',');
   }
