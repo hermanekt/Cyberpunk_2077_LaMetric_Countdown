@@ -82,7 +82,7 @@ if ( current == '0')
     frames: [
       {
         icon,
-        "text":"RELEASED"
+        "text":"IT'S OUT"
         }
     ],
   });
