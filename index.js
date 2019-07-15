@@ -81,10 +81,9 @@ if ( current == '0')
   send(res, 200, {
     frames: [
       {
-        "text":"RELEASED",
-        },
         icon,
-      },
+        "text":"RELEASED"
+        }
     ],
   });
 };
