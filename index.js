@@ -8,6 +8,10 @@ const { days, getTZ } = require('./days');
 const LRU = require('lru-cache');
 const cache = new LRU({ max: 10000 });
 
+server.connection({
+    port: process.env.PORT || 3000 
+});
+
 function status(res) {
   const json = {};
   cache.forEach((value, key) => {
@@ -28,7 +32,7 @@ const handler = async (req, res) => {
   if (ip === '::1' || ip === '::ffff:127.0.0.1') {
     ip = '0.0.0.0';
   }
-
+  
   if (ip === '0.0.0.0' || process.env.TEST) {
     ip = '8.8.8.8';
   }
