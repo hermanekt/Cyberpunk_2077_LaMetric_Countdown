@@ -27,7 +27,7 @@ async function days(timezone, ip) {
 
   const date = new Date();
   const year = date.getFullYear();
-  const xmas = parse(`${year}-12-25T00:00:00`);
+  const xmas = parse(`2020-4-16T00:00:00`);
 
   const now = new Date().getTime() + tzOffset.ms;
   let delta = differenceInDays(xmas, now);
