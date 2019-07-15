@@ -9,6 +9,8 @@ const LRU = require('lru-cache');
 const cache = new LRU({ max: 10000 });
 
 var ip = process.env.IP || '0.0.0.0';
+const http = require('http');
+
 
 function status(res) {
   const json = {};
