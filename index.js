@@ -77,7 +77,7 @@ if ( current >= '1')
   });
 
 /* if current >=1 */
-if ( current = '0')  
+if ( current == '0')  
   send(res, 200, {
     frames: [
       {
