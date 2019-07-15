@@ -60,7 +60,7 @@ const handler = async (req, res) => {
   /* const unit = current === 1 ? ' day' : ' days'; */
   const unit = current === 0 ? 'D PLAY' : ' D';
 
-  /* if current >1 */
+/* if current >=1 */
 if ( current >= '1')  
   send(res, 200, {
     frames: [
@@ -75,8 +75,8 @@ if ( current >= '1')
       },
     ],
   });
-};
 
+/* if current >=1 */
 if ( current = '0')  
   send(res, 200, {
     frames: [
