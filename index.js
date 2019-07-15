@@ -8,6 +8,8 @@ const { days, getTZ } = require('./days');
 const LRU = require('lru-cache');
 const cache = new LRU({ max: 10000 });
 
+var ip = process.env.IP || '0.0.0.0';
+
 function status(res) {
   const json = {};
   cache.forEach((value, key) => {
