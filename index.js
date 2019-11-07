@@ -66,7 +66,7 @@ if ( current >= '1')
     frames: [
       {
         goalData: {
-          start,
+          start: 312,
           current,
           end: 1,
           unit,
