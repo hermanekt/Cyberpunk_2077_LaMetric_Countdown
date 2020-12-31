@@ -82,7 +82,7 @@ if ( current == '0')
     frames: [
       {
         icon,
-        "text":"Patch 1.06 is released!"
+        "text":"Patch 1.06 is released"
         }
     ],
   });
