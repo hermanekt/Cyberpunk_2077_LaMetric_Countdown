@@ -82,7 +82,7 @@ const handler = async (req, res) => {
     frames: [
       {
         icon,
-        "text":"Patch 1.2 is Finaly released!!!"
+        "text":"Patch 1.21 is released!!!"
         }
     ],
   });
