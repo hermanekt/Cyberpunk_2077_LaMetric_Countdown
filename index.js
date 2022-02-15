@@ -82,7 +82,7 @@ const handler = async (req, res) => {
     frames: [
       {
         icon,
-        "text":"Patch 1.31 for Cyberpunk 2077 is live on PC, consoles and Stadia!"
+        "text":"Patch 1.5/Next-Gen update for Cyberpunk 2077 is live on PC, consoles and Stadia!"
         }
     ],
   });
