@@ -82,7 +82,7 @@ const handler = async (req, res) => {
     frames: [
       {
         icon,
-        "text":"Patch 1.61 for Cyberpunk 2077 is being rolled out and will soon be available accross all platforms!"
+        "text":"Patch 1.61 for Cyberpunk 2077 is available accross all platforms!"
         }
     ],
   });
